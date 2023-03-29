@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Sono:wght@400;700&display=swap");
+
+body {
+  font-family: "Sono", sans-serif;
+  background-color: burlywood;
+}
+
+figure {
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: aliceblue;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  margin-left: 30px;
+}
+
+.container {
+  display: flex;
+}
+
+aside {
+  padding: 10px;
+}
+
+footer {
+  text-align: center;
+  background-color: aliceblue;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 5px;
+  text-align: center;
+}
+
+.main-article {
+  margin-top: 30px;
+}
+
+h1 {
+  margin-bottom: 0;
+}
