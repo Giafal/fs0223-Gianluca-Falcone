@@ -12,7 +12,7 @@ header {
   margin-top: 20px;
   padding: 20px;
   width: 100%;
-  font-size: small;
+  font-size: 0.8rem;
 }
 
 main {
@@ -26,11 +26,11 @@ h1 {
 }
 
 main p {
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 
 #immagine-ricetta {
-  margin: 0 auto;
+  margin: 0;
 }
 
 #immagine-ricetta figcaption {
@@ -61,8 +61,7 @@ h2 {
   margin-top: 40px;
 }
 
-.ricetta p {
-  font-weight: bold;
+.ricetta h3 {
   margin-top: 30px;
 }
 
@@ -70,13 +69,12 @@ h2 {
   margin: 10px;
 }
 
-li > p:first-child {
-  font-weight: bold;
+li p {
+  font-size: 1rem;
 }
 
 video {
   width: 600px;
-  margin-top: 50px;
   border-radius: 5px;
 }
 
