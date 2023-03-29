@@ -1,0 +1,90 @@
+header {
+  text-align: center;
+}
+
+#logo img {
+  width: 150px;
+}
+
+#logo figcaption {
+  color: rgb(16, 119, 119);
+  border-top: 1px solid rgb(245, 181, 209);
+  margin-top: 20px;
+  padding: 20px;
+  width: 100%;
+  font-size: small;
+}
+
+main {
+  width: 600px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 70px;
+}
+
+main p {
+  font-size: 15px;
+}
+
+#immagine-ricetta {
+  margin: 0 auto;
+}
+
+#immagine-ricetta img {
+  width: 600px;
+  border-radius: 2%;
+}
+
+#immagine-ricetta figcaption {
+  text-align: center;
+  color: gray;
+  margin-top: 20px;
+}
+
+.link p {
+  margin: 0;
+  color: red;
+}
+
+a {
+  color: rgb(16, 141, 141);
+}
+
+.link {
+  border-left: 1px solid rgb(245, 181, 209);
+  margin-top: 20px;
+  padding: 10px;
+  margin-bottom: 50px;
+}
+
+h2 {
+  border-bottom: 1px solid rgb(199, 229, 255);
+  padding-bottom: 15px;
+  margin-top: 40px;
+}
+
+.ricetta p {
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+.ricetta li {
+  margin: 10px;
+}
+
+li > p:first-child {
+  font-weight: bold;
+}
+
+video {
+  width: 600px;
+  margin-top: 50px;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  background-color: beige;
+}
