@@ -127,6 +127,7 @@ table tr:nth-of-type(even) {
 table {
   border-bottom: 2px solid cadetblue;
   margin-bottom: 30px;
+  width: 100%;
 }
 
 /* FORM */
