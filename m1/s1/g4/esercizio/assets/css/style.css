@@ -149,6 +149,7 @@ table {
 }
 
 .form input {
+  border: none;
   border-bottom: 1px dashed black;
 }
 
