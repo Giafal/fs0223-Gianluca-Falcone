@@ -13,7 +13,7 @@ body {
 /* HEADER */
 
 header {
-  background-color: rgb(79, 79, 239);
+  background-color: #0088aa;
   padding: 30px;
   text-align: center;
   box-shadow: 1px 2px 5px #000;
@@ -110,7 +110,7 @@ caption {
 }
 
 table th {
-  background-color: cadetblue;
+  background-color: #3769cc;
   border: 1px solid rgb(195, 195, 195);
   padding: 20px;
 }
@@ -121,7 +121,7 @@ table td {
 }
 
 table tr:nth-of-type(even) {
-  background-color: rgb(231, 231, 231);
+  background-color: #f0f0f1;
 }
 
 table {
@@ -132,7 +132,7 @@ table {
 /* FORM */
 
 .form {
-  background-color: rgb(220, 220, 220);
+  background-color: #e1e0e1;
   padding: 30px;
   text-align: center;
   margin-bottom: 30px;
@@ -146,7 +146,7 @@ table {
 }
 
 .form button {
-  background-color: blue;
+  background-color: #3d6dd7;
   color: white;
 }
 
@@ -166,7 +166,7 @@ aside h2 {
 }
 
 aside div {
-  background-color: rgb(220, 220, 220);
+  background-color: #e1e0e1;
   margin-bottom: 20px;
   padding: 20px;
   border: 1px solid rgb(200, 200, 200);
@@ -197,11 +197,11 @@ aside a {
 /* FOOTER */
 
 footer {
-  background: rgb(2, 0, 36);
+  background: rgb(0, 85, 102);
   background: linear-gradient(
-    0deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(0, 82, 255, 1) 100%
+    180deg,
+    rgba(0, 85, 102, 1) 0%,
+    rgba(51, 62, 56, 1) 100%
   );
   padding: 20px;
   text-align: center;
