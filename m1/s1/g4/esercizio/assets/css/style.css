@@ -1,15 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
 /* IMPOSTAZIONI GENERALI */
+
+body {
+  font-family: "Poppins", sans-serif;
+  padding: 20px;
+  background-image: url(../img/sfondo.png);
+  background-size: cover;
+  background-attachment: fixed;
+}
 
 /* HEADER */
 
+header {
+  background-color: rgb(79, 79, 239);
+  padding: 30px;
+  text-align: center;
+  box-shadow: 1px 2px 5px #000;
+}
+
+.logo-title p {
+  text-transform: uppercase;
+  color: white;
+  margin-top: 30px;
+}
+
+nav ul {
+  list-style: none;
+  margin-top: 30px;
+  text-transform: uppercase;
+}
+
+nav ul a {
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li {
+  margin-bottom: 5px;
+}
+
+nav span {
+  content: "\21D2";
+  content: "\21D0";
+}
+
 /* MAIN */
+
+main {
+  background-color: white;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 30px 20px;
+}
 
 /* ELEMENTI NEL MAIN - ARTICLE */
 
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  line-height: 2.8rem;
+}
+
+.article-info {
+  color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 30px;
+}
+
+article p {
+  margin-bottom: 20px;
+}
+
+article p strong {
+  color: purple;
+  font-weight: bold;
+}
+
+article ul {
+  padding-left: 30px;
+  margin-bottom: 30px;
+}
+
+article button {
+  border-radius: 5px;
+}
+
+article ol {
+  padding-left: 30px;
+  margin-bottom: 30px;
+}
+
+article a {
+  color: cornflowerblue;
+}
+
+iframe {
+  border-radius: 30px;
+  margin-bottom: 30px;
+}
+
 /* TABELLE */
+
+caption {
+  font-style: italic;
+  font-weight: bold;
+}
+
+table th {
+  background-color: cadetblue;
+  border: 1px solid rgb(195, 195, 195);
+  padding: 20px;
+}
+
+table td {
+  padding: 20px;
+  text-align: center;
+}
+
+table tr:nth-of-type(even) {
+  background-color: rgb(231, 231, 231);
+}
+
+table {
+  border-bottom: 2px solid cadetblue;
+  margin-bottom: 30px;
+}
 
 /* FORM */
 
+.form {
+  background-color: rgb(220, 220, 220);
+  padding: 30px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.form h2 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+.form button {
+  background-color: blue;
+  color: white;
+}
+
+.form input {
+  border-bottom: 1px dashed black;
+}
+
 /* ELEMENTI NELL' ASIDE */
 
+aside h2 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+aside div {
+  background-color: rgb(220, 220, 220);
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid rgb(200, 200, 200);
+}
+
+.data {
+  margin-top: 30px;
+  text-align: right;
+  font-size: 0.8rem;
+}
+
+.data i {
+  margin-right: 5px;
+}
+
+.categoria {
+  margin-top: 5px;
+}
+
+.categoria i {
+  margin-right: 5px;
+}
+
+aside a {
+  color: cornflowerblue;
+}
+
 /* FOOTER */
+
+footer {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    0deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(0, 82, 255, 1) 100%
+  );
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+footer p {
+  margin-bottom: 30px;
+}
+
+footer a {
+  color: purple;
+  font-weight: bold;
+}
+
+footer address {
+  line-height: 1.3rem;
+}
