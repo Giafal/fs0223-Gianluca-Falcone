@@ -5,7 +5,7 @@
 
 body {
   color: #393d41;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   line-height: 1.65;
   font-family: "Open Sans", sans-serif;
   text-align: center;
@@ -21,16 +21,16 @@ h3 {
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   margin-bottom: 20px;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 h3 {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   margin-bottom: 25px;
 }
 
@@ -40,10 +40,12 @@ header {
   background-color: black;
   padding-top: 30px;
   padding-bottom: 30px;
+  padding-left: 80px;
+  text-align: left;
 }
 
 header img {
-  width: 30%;
+  width: 15%;
 }
 
 /* MAIN */
@@ -52,11 +54,9 @@ header img {
   background-image: url(../images/banner.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  padding-top: 70px;
-  padding-bottom: 35px;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-bottom: 50px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  margin-bottom: 200px;
 }
 
 #title p {
@@ -76,10 +76,18 @@ button {
 
 .info {
   padding: 30px;
+  text-align: left;
 }
 
 #info img {
   border-radius: 100%;
+  width: 30%;
+}
+
+#info {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 200px;
 }
 
 #testimony {
@@ -101,27 +109,32 @@ h2 {
 #testimony p:nth-of-type(1) {
   font-style: italic;
   margin-bottom: 30px;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
 }
 
 #testimony p:nth-of-type(3) {
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 
 /* ASIDE */
 
 .card {
   border: 1px solid #dee1e3;
-  margin: 50px auto;
-  width: 90%;
+  width: 500px;
 }
 
 .card img {
-  width: 100%;
+  width: 500px;
+  height: 500px;
+}
+
+aside {
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .card p {
-  margin-bottom: 40px;
+  padding: 20px;
 }
 
 /* FOOTER */
@@ -131,6 +144,7 @@ footer {
   padding-top: 50px;
   padding-bottom: 80px;
   margin-top: 100px;
+  text-align: center;
 }
 
 footer p {
@@ -147,10 +161,15 @@ footer h2 {
 
 #border {
   border-bottom: 1px solid white;
-  width: 50%;
+  width: 20%;
   margin: 30px auto;
 }
 
 #copyright {
-  font-size: 1rem;
+  font-size: 1.3rem;
+}
+
+#contacts {
+  text-align: left;
+  padding-left: 780px;
 }
