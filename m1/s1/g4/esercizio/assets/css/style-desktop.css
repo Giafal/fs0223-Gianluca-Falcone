@@ -4,7 +4,6 @@ body {
   font-family: "Poppins", sans-serif;
   padding: 40px;
   background-image: url(../img/sfondo.png);
-  /* background-size: cover; */
   background-attachment: fixed;
   background-repeat: repeat;
 }
