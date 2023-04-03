@@ -17,6 +17,9 @@
 
     <p>Click the bulb to turn on/off the light</p>
 
+    <button id="bulbOn" onclick="bulbOn()">Accendi</button>
+    <button id="bulbOff" onclick="bulbOff()">Spegni</button>
+
     <script>
       function changeImage() {
         var image = document.getElementById("myImage");
@@ -25,6 +28,14 @@
         } else {
           image.src = "assets/img/light-bulb-on.svg";
         }
+      }
+
+      function bulbOn() {
+        document.getElementById("myImage").src = "assets/img/light-bulb-on.svg";
+      }
+      function bulbOff() {
+        document.getElementById("myImage").src =
+          "assets/img/light-bulb-off.svg";
       }
     </script>
   </body>
