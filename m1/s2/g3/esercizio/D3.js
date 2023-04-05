@@ -95,23 +95,22 @@
   */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-// {
-// let num1 = 66;
-// let num2 = 48;
-// let num3 = 14;
-// let arr = [];
+{
+  let num1 = 66;
+  let num2 = 48;
+  let num3 = 14;
+  let arr = [];
 
-// if (arr == []){
-//   arr.push(num1, num2, num3)
-//   console.log(arr)
-// }
+  if (arr.length == 0) {
+    arr.push(num1, num2, num3);
+  }
 
-// arr.sort(function(a,b){
-//   return a - b
-// });
+  arr.sort(function (a, b) {
+    return b - a;
+  });
 
-// console.log(arr)
-// }
+  console.log(arr);
+}
 
 /*
   
