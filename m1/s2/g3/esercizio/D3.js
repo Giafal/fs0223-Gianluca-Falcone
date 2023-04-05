@@ -112,69 +112,6 @@
   console.log(arr);
 }
 
-/*
-  
-  let num = [1,100,20,22,101];
-  
-          num.sort(function(a,b){
-              return a - b
-          });
-  
-          console.log(num);
-  
-  
-  
-  
-  if(num1 > num2 && num1 > num3 && num2 > num3){
-    arr.unshift(num1)
-    console.log(arr)
-  }else if(num2 > nume3){
-    arr.push(num2)
-    console.log(arr)
-  }
-  
-  
-    
-  }
-  
-  let a = 2 
-  let b = 4
-  let c = 8
-  
-  if (a > b && a > c)
-  {
-          if (b>c)
-          {
-              console.log(La sequenza sarà ${a} ${b} ${c});
-          }
-          else
-          {
-              console.log(La sequenza sarà ${a} ${c} ${b});
-          }
-  }
-  else if (b > a && b > c)
-  {
-          if (a>c)
-          {
-               console.log(la sequenza sarà ${b} ${a} ${c});
-          }
-          else
-          {
-               console.log(la sequenza sarà ${b} ${c} ${a});
-          }
-  }
-  else if (c > a && c > b)
-  {
-          if (a>b)
-          {
-              console.log(la sequenza sarà ${c} ${a} ${b});
-          }
-          else
-          {
-              console.log(la sequenza sarà ${c} ${b} ${a});
-          }
-  }*/
-
 /* ESERCIZIO 8
     Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
   */
@@ -275,7 +212,22 @@ if (numb1 % 2 == 0) {
   */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+let arr = [];
+arr.push(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+console.log(arr);
 
 /* ESERCIZIO 15
     Scrivi del codice per sostituire l'ultimo elemento dell'array, ovvero il valore 10, con il valore 100.
   */
+
+/* SCRIVI QUI LA TUA RISPOSTA */
+arr[9] = 100;
+console.log(arr);
+
+/*{
+    let arr = [];
+    arr.push(1,2,3,4,5,6,7,8,9,10)
+    arr.pop()
+    arr.push(100)
+    console.log(arr);
+  }*/
