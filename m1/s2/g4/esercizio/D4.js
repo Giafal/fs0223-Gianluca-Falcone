@@ -112,8 +112,8 @@ Come risultato dovresti ottenere qualcosa di simile: ["Luke Skywalker", "C-3PO",
 */
 for (let i = 0; i < starWarsCharacters.length; i++) {
   characters.push(starWarsCharacters[i].name);
-  console.log(characters);
 }
+console.log(characters);
 
 /* ESERCIZIO 3
   Seguendo i passaggi precedenti crea un array chiamato "femaleCharacters" e inserisci un oggetto con questa struttura: 
@@ -207,13 +207,13 @@ switch (true) {
   case totalMass == 500:
     console.log("ship is half loaded");
     break;
-  case totalMass > 700:
+  case totalMass > 700 && totalMass < 900:
     console.log("warning: load is over 700");
     break;
-  case totalMass > 900:
+  case totalMass >= 900 && totalMass < 1000:
     console.log(" critical load: over 900");
     break;
-  case totalMass > 1000:
+  case totalMass >= 1000:
     console.log(" DANGER! OVERLOAD ALERT: Jump ship now!");
     break;
   default:
@@ -239,131 +239,12 @@ Usa uno più for loop per raggiungere il risultato
 
 Una volta fatto crea un conosle.log per controllare la proprietà length di "characters" prima e dopo l'operazione
 */
+console.log(characters.length);
+for (let i = 0; i < femaleCharacters.length; i++) {
+  characters.splice(characters.indexOf(femaleCharacters[i].name), 1);
+}
+console.log(characters.length);
 
 /* EXTRA ESERCIZIO 10
 Crea una funzionalità che prenda un elemento casuale dall'array "starWarsCharacters" e ne stampi in console le proprietà in modo discorsivo
 */
-
-class Cast {
-  constructor() {
-    this.casting = [
-      {
-        name: "Luke Skywalker",
-        height: "172",
-        mass: "277",
-        hair_color: "blond",
-        skin_color: "fair",
-        eye_color: "blue",
-        birth_year: "19BBY",
-        gender: "male",
-      },
-      {
-        name: "C-3PO",
-        height: "167",
-        mass: "75",
-        hair_color: "n/a",
-        skin_color: "gold",
-        eye_color: "yellow",
-        birth_year: "112BBY",
-        gender: "n/a",
-      },
-      {
-        name: "R2-D2",
-        height: "96",
-        mass: "32",
-        hair_color: "n/a",
-        skin_color: "white, blue",
-        eye_color: "red",
-        birth_year: "33BBY",
-        gender: "n/a",
-      },
-      {
-        name: "Darth Vader",
-        height: "202",
-        mass: "136",
-        hair_color: "none",
-        skin_color: "white",
-        eye_color: "yellow",
-        birth_year: "41.9BBY",
-        gender: "male",
-      },
-      {
-        name: "Leia Organa",
-        height: "150",
-        mass: "49",
-        hair_color: "brown",
-        skin_color: "light",
-        eye_color: "brown",
-        birth_year: "19BBY",
-        gender: "female",
-      },
-      {
-        name: "Owen Lars",
-        height: "178",
-        mass: "120",
-        hair_color: "brown, grey",
-        skin_color: "light",
-        eye_color: "blue",
-        birth_year: "52BBY",
-        gender: "male",
-      },
-      {
-        name: "Beru Whitesun lars",
-        height: "165",
-        mass: "75",
-        hair_color: "brown",
-        skin_color: "light",
-        eye_color: "blue",
-        birth_year: "47BBY",
-        gender: "female",
-      },
-      {
-        name: "R5-D4",
-        height: "97",
-        mass: "32",
-        hair_color: "n/a",
-        skin_color: "white, red",
-        eye_color: "red",
-        birth_year: "unknown",
-        gender: "n/a",
-      },
-      {
-        name: "Biggs Darklighter",
-        height: "183",
-        mass: "84",
-        hair_color: "black",
-        skin_color: "light",
-        eye_color: "brown",
-        birth_year: "24BBY",
-        gender: "male",
-      },
-      {
-        name: "Obi-Wan Kenobi",
-        height: "182",
-        mass: "77",
-        hair_color: "auburn, white",
-        skin_color: "fair",
-        eye_color: "blue-gray",
-        birth_year: "57BBY",
-        gender: "male",
-      },
-    ];
-    console.log(this.casting);
-  }
-
-  mix() {
-    this.casting.sort((a, b) => 0.5 - Math.random(this.casting.length));
-    console.log(this.casting);
-  }
-
-  pick() {
-    const character = this.casting.pop();
-    console.log(
-      `${character.name} is ${character.height} tall and ${character.mass} mass, the hair is ${character.hair_color}, the skin is ${character.skin_color} and the eye is ${character.eye_color}. He/she was born in ${character.birth_year} and he/she is ${character.gender}.`
-    );
-  }
-}
-
-const cast = new Cast();
-cast.mix();
-cast.pick();
