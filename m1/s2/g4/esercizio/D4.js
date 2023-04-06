@@ -269,19 +269,19 @@ class Cast {
     console.log(this.casting);
   }
 
-  mischia() {
+  mix() {
     this.casting.sort((a, b) => 0.5 - Math.random(this.casting.length));
     console.log(this.casting);
   }
 
-  pesca() {
+  pick() {
     const character = this.casting.pop();
     console.log(
-      `${character.name} is ${character.height} tall and ${character.mass} mass, the hair is ${character.hair_color}, the skin is ${character.skin_color} and the eye is ${character.eye_color}. He was born in ${character.birth_year} and he is ${character.gender}.`
+      `${character.name} is ${character.height} tall and ${character.mass} mass, the hair is ${character.hair_color}, the skin is ${character.skin_color} and the eye is ${character.eye_color}. He/she was born in ${character.birth_year} and he/she is ${character.gender}.`
     );
   }
 }
 
 const cast = new Cast();
-cast.mischia();
-cast.pesca();
+cast.mix();
+cast.pick();
