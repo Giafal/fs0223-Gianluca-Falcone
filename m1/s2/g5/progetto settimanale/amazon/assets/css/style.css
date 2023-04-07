@@ -114,21 +114,25 @@ main {
 #img1 {
   background-image: url(../img/img_1.jpg);
   background-size: cover;
+  background-position: center;
 }
 
 #img2 {
   background-image: url(../img/img_2.jpg);
   background-size: cover;
+  background-position: center;
 }
 
 #img3 {
   background-image: url(../img/img_3.jpg);
   background-size: cover;
+  background-position: center;
 }
 
 #img4 {
   background-image: url(../img/img_4.jpg);
   background-size: cover;
+  background-position: center;
 }
 
 #cards {
