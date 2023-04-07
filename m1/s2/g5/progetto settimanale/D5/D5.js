@@ -117,7 +117,7 @@ const numericArray = [
 
 let number = 0;
 
-while (number <= numericArray.indexOf(32)) {
+while (number < numericArray.indexOf(32)) {
   console.log(numericArray[number]);
   number++;
 }
