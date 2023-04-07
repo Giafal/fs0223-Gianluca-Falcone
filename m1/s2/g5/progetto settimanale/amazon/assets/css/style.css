@@ -1,0 +1,186 @@
+/* IMPOSTAZIONI GENERALI */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #e9edee;
+}
+
+h1 {
+  font-size: 3.5rem;
+  margin-bottom: 40px;
+  font-weight: bold;
+  padding-top: 100px;
+}
+
+h2 {
+  font-size: 2rem;
+  padding-bottom: 50px;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 1.7rem;
+  display: inline;
+  font-weight: 500;
+}
+
+a {
+  font-size: 1.5rem;
+}
+
+/*HEADER */
+
+header {
+  background-color: #222f3f;
+}
+
+header img {
+  height: 70px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 40px;
+}
+
+nav {
+  background-color: #364759;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+nav a {
+  color: #fff;
+  margin-left: 25px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  border: 1px solid #fff;
+  padding: 9px;
+}
+
+#first-link {
+  margin-left: 40px;
+}
+
+/* MAIN */
+
+main {
+  margin: 40px;
+}
+
+#shop {
+  background-color: #f56600;
+  text-align: center;
+  color: white;
+  padding: 10px;
+  margin-bottom: 40px;
+}
+
+#banner {
+  background-image: url(../img/bg-image.png);
+  text-align: center;
+  color: white;
+  background-size: contain;
+  margin-bottom: 40px;
+}
+
+#find {
+  background-color: #fff;
+  padding: 25px 20px;
+}
+
+#find a {
+  margin-left: 30px;
+  text-decoration: none;
+  color: #056a73;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+#find p {
+  margin-left: 30px;
+}
+
+.card {
+  height: 500px;
+  width: 23%;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+#img1 {
+  background-image: url(../img/img_1.jpg);
+  background-size: cover;
+}
+
+#img2 {
+  background-image: url(../img/img_2.jpg);
+  background-size: cover;
+}
+
+#img3 {
+  background-image: url(../img/img_3.jpg);
+  background-size: cover;
+}
+
+#img4 {
+  background-image: url(../img/img_4.jpg);
+  background-size: cover;
+}
+
+#cards {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+
+#play {
+  background-image: url(../img/img_9.png);
+  height: 600px;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.title a {
+  margin-left: 30px;
+  text-decoration: none;
+  color: #056a73;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.title {
+  text-align: center;
+  margin-top: 5px;
+}
+
+#sound {
+  background-image: url(../img/img_10.png);
+  height: 600px;
+  width: 100%;
+  margin-top: 40px;
+}
+
+footer {
+  text-align: center;
+  background-color: #222f3f;
+}
+
+footer img {
+  height: 70px;
+  padding: 80px;
+}
+
+#back {
+  background-color: #364759;
+  padding: 10px;
+}
+
+#back a {
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
