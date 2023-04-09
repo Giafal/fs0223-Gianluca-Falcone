@@ -248,3 +248,54 @@ console.log(characters.length);
 /* EXTRA ESERCIZIO 10
 Crea una funzionalità che prenda un elemento casuale dall'array "starWarsCharacters" e ne stampi in console le proprietà in modo discorsivo
 */
+
+const randomIndex = Math.floor(Math.random() * starWarsCharacters.length);
+selectedCharacter = starWarsCharacters[randomIndex];
+
+console.log("The selected character is: " + selectedCharacter.name);
+
+if (selectedCharacter.gender === "female") {
+  console.log("She is", selectedCharacter.height, "cm tall");
+} else {
+  console.log("He is", selectedCharacter.height, "cm tall");
+}
+
+if (
+  selectedCharacter.hair_color !== "n/a" &&
+  selectedCharacter.hair_color !== "none"
+) {
+  console.log("And has", selectedCharacter.hair_color, "hair");
+} else {
+  console.log("And has no hair");
+}
+
+console.log("With", selectedCharacter.skin_color, "skin");
+
+/* PROVE FOR OF, FOR IN, FOR EACH, WHILE */
+
+for (let character of starWarsCharacters) {
+  console.log(character.name);
+}
+
+for (let character of starWarsCharacters) {
+  for (let key in character) {
+    const nuovoParagrafo = document.createElement("p");
+    const paragrafo = document.createTextNode(`${key}: ${character[key]}`);
+    nuovoParagrafo.appendChild(paragrafo);
+    document.body.appendChild(nuovoParagrafo);
+  }
+}
+
+starWarsCharacters.forEach(function (character, index) {
+  if (index === 0) {
+    console.log(character);
+  } else {
+    console.log(character.name);
+  }
+});
+
+let j = 0;
+while (j < starWarsCharacters.length) {
+  console.log(starWarsCharacters[j].mass);
+  j++;
+}
