@@ -72,12 +72,35 @@ console.log(shoppingCartTotal(shoppingCart));
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+const object = {
+  id: 1,
+  price: 300,
+  name: "Lasagne",
+  quantity: 2,
+};
+function addToShoppingCart(shoppingCart, object) {
+  shoppingCart.push(object);
+  let totalElements = 0;
+  for (let i = 0; i < shoppingCart.length; i++) {
+    totalElements += shoppingCart[i].quantity;
+  }
+  return totalElements;
+}
+console.log(addToShoppingCart(shoppingCart, object));
+
 /* EXTRA 4
  Nel tuo eCommerce disponi di un'array di oggetti chiamato "shoppingCart". Ognuno di questi oggetti ha le seguenti proprietà: "price", "name", "id" e "quantity".
  Crea una funzione chiamata "maxShoppingCart" che riceve l'array "shoppingCart" e ritorna l'oggetto più costoso in esso contenuto.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+function maxShoppingCart(arr) {
+  let maxPrice = arr.reduce((a, b) => (a.price > b.price ? a : b));
+  console.log(maxPrice);
+}
+
+maxShoppingCart(shoppingCart);
 
 /* EXTRA 5
  Nel tuo eCommerce disponi di un'array di oggetti chiamato "shoppingCart". Ognuno di questi oggetti ha le seguenti proprietà: "price", "name", "id" e "quantity".
@@ -86,6 +109,12 @@ console.log(shoppingCartTotal(shoppingCart));
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+function latestShoppingCart(shoppingCart) {
+  return shoppingCart[shoppingCart.length - 1];
+}
+
+console.log(latestShoppingCart(shoppingCart));
+
 /* EXTRA 6
  Crea una funzione chiamata "loopUntil" che riceve un numero intero come parametro con valore tra 0 e 9.
  La funzione è composta da un ciclo che stampa un numero casuale tra 0 e 9 finchè il numero casuale non è maggiore di x per tre volte di fila.
@@ -93,17 +122,71 @@ console.log(shoppingCartTotal(shoppingCart));
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+function loopUntil(x) {
+  let consecutiveCount = 0;
+  while (consecutiveCount < 3) {
+    const randomNumber = Math.floor(Math.random() * 10);
+    console.log(randomNumber);
+    if (randomNumber > x) {
+      consecutiveCount++;
+    } else {
+      consecutiveCount = 0;
+    }
+  }
+}
+
+console.log(loopUntil(5));
+
 /* EXTRA 7
 Crea una funzione chiamata "average" che riceve un array come parametro e ne ritorna la media aritmetica. La funzione salta automaticamente i valori non numerici nell'array.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+function average(arr) {
+  let sum = 0;
+  let count = 0;
+  for (let i = 0; i < arr.length; i++) {
+    if (
+      typeof arr[i] === "number" &&
+      arr[i] !== NaN &&
+      typeof arr[i] !== "boolean" &&
+      typeof arr[i] !== "string"
+    ) {
+      sum += arr[i];
+      count++;
+    }
+  }
+  if (count === 0) {
+    return 0;
+  } else {
+    return sum / count;
+  }
+}
+
+array = [1, 2, 3, 4, 5, 6, "Mario", 7, 8, 20, true];
+
+console.log(average(array));
+
 /* EXTRA 8
  Crea una funzione chiamata "longest" che trova la stringa più lunga all'interno di un array di stringhe fornito come parametro.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+function longest(arr) {
+  let longest = "";
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i].length > longest.length) {
+      longest = arr[i];
+    }
+  }
+  console.log(longest);
+}
+
+array2 = ["Mario", "Gianluca", "Vincenzone"];
+
+longest(array2);
 
 /* EXTRA 9
  Crea una funzione per creare un filtro anti-spam per la tua casella email. La funzione riceve un parametro stringa chiamato "emailContent", e torna un valore booleano.
@@ -112,11 +195,35 @@ Crea una funzione chiamata "average" che riceve un array come parametro e ne rit
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+function isSpam(emailContent) {
+  if (emailContent.includes("SPAM")) {
+    return false;
+  } else if (emailContent.includes("SCAM")) {
+    return false;
+  } else {
+    return true;
+  }
+}
+
+console.log(isSpam("gianluca.falcone@yahoo.it"));
+
 /* EXTRA 10
  Scrivi una funzione che riceve una data come parametro, e calcola il numero di giorni passati da quella data.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+function calcolaGiorniPassati(data) {
+  let oggi = new Date();
+  let differenzaMillisecondi = oggi - data.getTime();
+  let millisecondiAlGiorno = 24 * 60 * 60 * 1000;
+  let giorni = Math.floor(differenzaMillisecondi / millisecondiAlGiorno);
+  return giorni;
+}
+
+let data = new Date(2023, 3, 1);
+
+console.log(calcolaGiorniPassati(data));
 
 /* EXTRA 11
  Scrivi una funzione chiamata "matrixGenerator" che riceve come paremetri due numeri interi, "x" e "y".
@@ -127,3 +234,17 @@ Crea una funzione chiamata "average" che riceve un array come parametro e ne rit
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+function matrixGenerator(x, y) {
+  let matrix = [];
+  for (let i = 0; i < x; i++) {
+    let row = [];
+    for (let j = 0; j < y; j++) {
+      row.push([i, j]);
+    }
+    matrix.push(row);
+  }
+  return matrix;
+}
+
+console.log(matrixGenerator(3, 2));
