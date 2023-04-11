@@ -7,6 +7,31 @@
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+function giveMeRandom(n) {
+  let array = [];
+  for (let i = 0; i < n; i++) {
+    array.push(Math.floor(Math.random() * 11));
+  }
+  return array;
+}
+
+function checkArray(arr) {
+  let sum = 0;
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] > 5) {
+      console.log(arr[i] + " è maggiore di 5");
+      sum += arr[i];
+    } else {
+      console.log(arr[i] + " non è maggiore di 5");
+    }
+  }
+  return sum;
+}
+
+let arrayRandom = giveMeRandom(5);
+console.log(arrayRandom);
+
+console.log(checkArray(arrayRandom));
 
 /* EXTRA 2
  Nel tuo eCommerce disponi di un'array di oggetti chiamato "shoppingCart". Ognuno di questi oggetti ha le seguenti proprietà: "price", "name", "id" e "quantity".
@@ -14,6 +39,31 @@
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+const shoppingCart = [
+  {
+    id: 1,
+    price: 100,
+    name: "Tacos",
+    quantity: 2,
+  },
+  {
+    id: 2,
+    price: 200,
+    name: "Pizza",
+    quantity: 3,
+  },
+];
+
+function shoppingCartTotal(shoppingCart) {
+  let total = 0;
+  for (let i = 0; i < shoppingCart.length; i++) {
+    total += shoppingCart[i].price * shoppingCart[i].quantity;
+  }
+  return total;
+}
+
+console.log(shoppingCartTotal(shoppingCart));
 
 /* EXTRA 3
  Nel tuo eCommerce disponi di un'array di oggetti chiamato "shoppingCart". Ognuno di questi oggetti ha le seguenti proprietà: "price", "name", "id" e "quantity".
