@@ -73,18 +73,19 @@ console.log(shoppingCartTotal(shoppingCart));
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 const object = {
-  id: 1,
+  id: 3,
   price: 300,
   name: "Lasagne",
   quantity: 2,
 };
 function addToShoppingCart(shoppingCart, object) {
   shoppingCart.push(object);
-  let totalElements = 0;
-  for (let i = 0; i < shoppingCart.length; i++) {
-    totalElements += shoppingCart[i].quantity;
-  }
-  return totalElements;
+  //   let totalElements = 0;
+  //   for (let i = 0; i < shoppingCart.length; i++) {
+  //     totalElements += shoppingCart[i].quantity;
+  //   }
+  //   return totalElements;
+  return shoppingCart.length;
 }
 console.log(addToShoppingCart(shoppingCart, object));
 
