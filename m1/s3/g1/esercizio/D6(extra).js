@@ -182,12 +182,12 @@ function longest(arr) {
       longest = arr[i];
     }
   }
-  console.log(longest);
+  return longest;
 }
 
 array2 = ["Mario", "Gianluca", "Vincenzone"];
 
-longest(array2);
+console.log(longest(array2));
 
 /* EXTRA 9
  Crea una funzione per creare un filtro anti-spam per la tua casella email. La funzione riceve un parametro stringa chiamato "emailContent", e torna un valore booleano.
