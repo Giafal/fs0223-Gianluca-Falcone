@@ -29,7 +29,7 @@ function random(array) {
   return randomArray;
 }
 
-console.log(random([]));
+console.log(random());
 
 /* ESERCIZIO 3
   Scrivi una funzione per ricavare solamente i valori PARI da un array composto da soli valori numerici (suggerimento: il metodo filter può aiutare)
@@ -118,7 +118,7 @@ function dispari(array) {
   console.log(dispariArray);
 }
 
-dispari([]);
+dispari();
 
 /* Questo array di film verrà usato negli esercizi a seguire. Non modificarlo e scorri oltre per riprendere gli esercizi :) */
 const movies = [
@@ -251,6 +251,20 @@ function filmPiùVecchio(array) {
 }
 
 console.log(filmPiùVecchio(movies));
+
+const oldestMovie = (array) => {
+  let result = { Year: 2100 };
+  for (let i = 0; i < array.length; i++) {
+    let currentYear = parseInt(array[i].Year);
+    if (currentYear < result.Year) {
+      result = array[i];
+    }
+  }
+
+  return result;
+};
+
+console.log(oldestMovie(movies));
 
 /* ESERCIZIO 11
   Scrivi una funzione per ottenere il numero di film contenuti nell'array fornito.
