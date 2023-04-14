@@ -301,10 +301,6 @@
           let prezzo = document.createElement("td");
           prezzo.textContent = riga.prezzo;
 
-          immagine.addEventListener("click", function () {
-            console.log("hai cliccato l'immagine");
-          });
-
           tr.append(immagine, nome, quantità, prezzo);
           tbody.append(tr);
         }
