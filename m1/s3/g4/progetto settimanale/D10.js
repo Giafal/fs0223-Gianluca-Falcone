@@ -200,15 +200,9 @@ function isTodayMyBirthday(date) {
   const today = new Date();
   const currentDay = today.getDate();
   const currentMonth = today.getMonth();
-  const currentYear = today.getFullYear();
   const birthdayDay = date.getDate();
   const birthdayMonth = date.getMonth();
-  const birthdayYear = date.getFullYear();
-  if (
-    currentDay === birthdayDay &&
-    currentMonth === birthdayMonth &&
-    currentYear === birthdayYear
-  ) {
+  if (currentDay === birthdayDay && currentMonth === birthdayMonth) {
     return true;
   } else {
     return false;
@@ -388,7 +382,7 @@ console.log(countMovies(movies));
 function onlyTheYears(array) {
   let years = [];
   for (let movie of array) {
-    years.push(parseInt(movie.Year));
+    years.push(movie.Year);
   }
   return years;
 }
@@ -399,7 +393,7 @@ console.log(onlyTheYears(movies));
   Scrivi una funzione chiamata "onlyInLastMillennium" che ritorna solamente i film prodotto nel millennio scorso contenuti nell'array "movies" fornito.
 */
 
-const onlyInThisMillennium = (array) => {
+const onlyInLastMillennium = (array) => {
   let result = [];
   for (let i = 0; i < array.length; i++) {
     if (parseInt(array[i].Year) < 2000) {
@@ -409,7 +403,7 @@ const onlyInThisMillennium = (array) => {
   return result;
 };
 
-console.log(onlyInThisMillennium(movies));
+console.log(onlyInLastMillennium(movies));
 
 /* ESERCIZIO 16
   Scrivi una funzione chiamata "sumAllTheYears" che ritorna la somma di tutti gli anni in cui sono stati prodotti i film contenuti nell'array "movies" fornito.
