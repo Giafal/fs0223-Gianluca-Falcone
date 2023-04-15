@@ -533,7 +533,7 @@ function addElement() {
 function removeElement() {
   let myList = document.querySelectorAll("#myList li");
   for (let li of myList) {
-    li.remove();
+    li.textContent = "";
   }
 }
 
