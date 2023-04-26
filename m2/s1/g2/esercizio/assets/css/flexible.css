@@ -1,0 +1,40 @@
+.article {
+  width: 400px;
+  background-color: #fbf7e3;
+  border-radius: 10px;
+}
+
+.img {
+  background-image: url(../imgs/honey.jpg);
+  width: 90%;
+  height: 300px;
+  background-position: center;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.article h3 {
+  color: #61332a;
+  margin: 30px;
+  padding-top: 30px;
+}
+
+.article p {
+  color: #61332a;
+  margin: 25px;
+}
+
+@media screen and (min-width: 768px) {
+  .article {
+    display: flex;
+    width: 100%;
+  }
+
+  .img {
+    order: -1;
+  }
+
+  .article h3 {
+    padding: 0;
+  }
+}
