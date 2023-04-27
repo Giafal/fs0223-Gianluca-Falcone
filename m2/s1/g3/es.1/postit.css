@@ -55,33 +55,33 @@ h3 {
 }
 
 .post1 {
-  animation: extra 1s linear 0s;
+  animation: extra 1s linear 0s backwards;
 }
 
 .post2 {
-  animation: extra 1s linear 1s;
+  animation: extra 1s linear 1s backwards;
 }
 
 .post3 {
-  animation: extra 1s linear 2s;
+  animation: extra 1s linear 2s backwards;
 }
 
 .post4 {
-  animation: extra 1s linear 3s;
+  animation: extra 1s linear 3s backwards;
 }
 
 .post5 {
-  animation: extra 1s linear 4s;
+  animation: extra 1s linear 4s backwards;
 }
 
 .post6 {
-  animation: extra 1s linear 5s;
+  animation: extra 1s linear 5s backwards;
 }
 
 .post7 {
-  animation: extra 1s linear 6s;
+  animation: extra 1s linear 6s backwards;
 }
 
 .post8 {
-  animation: extra 1s linear 7s;
+  animation: extra 1s linear 7s backwards;
 }
