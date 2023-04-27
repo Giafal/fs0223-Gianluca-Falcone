@@ -1,0 +1,87 @@
+#motherboard {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgb(56, 56, 56);
+  width: 100%;
+  height: 100%;
+}
+
+h3 {
+  font-weight: bold;
+}
+
+.post-it {
+  width: 300px;
+  height: 300px;
+  background-color: rgb(255, 255, 86);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
+  transform: rotate(10deg);
+  transition: all 0.3s linear;
+}
+
+.green {
+  background-color: lightgreen;
+  transform: rotate(-10deg);
+}
+
+.blue {
+  background-color: lightblue;
+  transform: rotate(-5deg);
+}
+
+.post-it:hover {
+  transform: scale(1.3);
+  z-index: 1;
+}
+
+@keyframes extra {
+  0% {
+    transform: scale(1.5);
+    opacity: 0;
+    z-index: 1;
+  }
+  1% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    z-index: 1;
+  }
+}
+
+.post1 {
+  animation: extra 1s linear 0s;
+}
+
+.post2 {
+  animation: extra 1s linear 1s;
+}
+
+.post3 {
+  animation: extra 1s linear 2s;
+}
+
+.post4 {
+  animation: extra 1s linear 3s;
+}
+
+.post5 {
+  animation: extra 1s linear 4s;
+}
+
+.post6 {
+  animation: extra 1s linear 5s;
+}
+
+.post7 {
+  animation: extra 1s linear 6s;
+}
+
+.post8 {
+  animation: extra 1s linear 7s;
+}
