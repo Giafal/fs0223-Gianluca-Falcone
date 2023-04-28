@@ -239,6 +239,14 @@ aside ul li {
   #title p {
     padding-left: 100px;
   }
+
+  header {
+    width: 100%;
+  }
+
+  main {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 552px) {
