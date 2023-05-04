@@ -1,0 +1,14 @@
+$sm: 1px;
+$normal: 2px;
+$md: 3px;
+$lg: 4px;
+$xl: 5px;
+$xxl: 6px;
+
+$breakpoints: sm, normal, md, lg, xl, xxl;
+
+@each $bp in $breakpoints {
+  .padding-block-#{$bp} {
+    padding: $bp;
+  }
+}

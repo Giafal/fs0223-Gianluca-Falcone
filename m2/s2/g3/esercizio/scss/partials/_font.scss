@@ -1,0 +1,18 @@
+html {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+$h6: 16px;
+$h5: 20px;
+$h4: 24px;
+$h3: 28px;
+$h2: 32px;
+$h1: 36px;
+
+@mixin titleBig {
+  font-size: 36px;
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+  font-style: normal;
+}

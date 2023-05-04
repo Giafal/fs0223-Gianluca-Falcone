@@ -1,0 +1,11 @@
+$btn-colors: (
+  "blue": #0e6cff,
+  "orange": #ff8700,
+  "green": #4caf50,
+);
+@each $name, $col in $btn-colors {
+  .btn-#{$name} {
+    background-color: $col;
+    color: #f4f4f4;
+  }
+}
