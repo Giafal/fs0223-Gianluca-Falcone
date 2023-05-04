@@ -129,16 +129,16 @@ EXTRAS
                 <a class="nav-link" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Saldi</a>
+                <a class="nav-link" href="#saldi">Saldi</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link">Welcome summer</a>
+                <a class="nav-link" href="#welcomeSummer">Welcome summer</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link">Last minute</a>
+                <a class="nav-link" href="#lastMinute">Last minute</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link">Recensioni</a>
+                <a class="nav-link" href="#recensioni">Recensioni</a>
               </li>
             </ul>
             <form class="d-flex" role="search">
@@ -163,7 +163,7 @@ EXTRAS
             class="col-8 col-md-12 d-flex align-items-center border-bottom p-3 justify-content-center"
           >
             <h1>Eveline-R</h1>
-            <p>-Feel the freedom</p>
+            <p class="m-0 ms-2">-Feel the freedom</p>
           </div>
           <div class="col-8 col-md-12 p-3">
             <h3>Scopri le destinazioni più calde del momento!</h3>
@@ -177,14 +177,22 @@ EXTRAS
       </div>
     </header>
     <main>
-      <div class="container">
+      <div class="container" id="saldi">
         <div class="row">
           <div class="col-2"><h3>Saldi</h3></div>
           <div class="col-2 offset-8">
-            <p class="text-primary w-10">Nascondi sezione</p>
+            <a
+              class="btn btn-primary"
+              data-bs-toggle="collapse"
+              href="#saldiCards"
+              role="button"
+              aria-expanded="false"
+              aria-controls="collapseExample"
+              >Nascondi sezione</a
+            >
           </div>
         </div>
-        <div class="row">
+        <div class="row" id="saldiCards">
           <div class="col-6 col-md-4 col-lg-3 mb-5">
             <div class="card border border-info border-2">
               <img
@@ -257,7 +265,7 @@ EXTRAS
           </div>
         </div>
       </div>
-      <div class="container">
+      <div class="container" id="welcomeSummer">
         <div class="row">
           <div class="col-8"><h3>Welcome summer</h3></div>
           <div class="col-2 offset-2">
@@ -406,8 +414,8 @@ EXTRAS
             />
           </div>
           <div class="col-6 col-lg-4 position-relative">
-            <h2>Fushifaru Maldives</h2>
-            <p>15.04.2023-29.04.2023</p>
+            <h2 class="display-4">Fushifaru Maldives</h2>
+            <p class="font-monospace text-muted">15.04.2023-29.04.2023</p>
             <p>Ville a partire da 500€, non fartele sfuggire!</p>
             <span
               class="position-absolute top-30 start-10 badge rounded-pill bg-dark"
@@ -416,7 +424,7 @@ EXTRAS
           </div>
         </div>
       </div>
-      <div class="container mt-5">
+      <div class="container mt-5" id="lastMinute">
         <div class="row">
           <div class="col"><h3>Last minute</h3></div>
         </div>
@@ -466,6 +474,176 @@ EXTRAS
         </div>
       </div>
     </main>
+    <aside>
+      <div class="container" id="recensioni">
+        <div class="row">
+          <div class="col text-center mt-5 mb-3"><h3>Dicono di noi</h3></div>
+        </div>
+        <div class="row">
+          <div class="col-2 d-flex flex-row-reverse">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="50"
+              height="50"
+              fill="currentColor"
+              class="bi bi-person-circle border border-2 border-info rounded-circle"
+              viewBox="0 0 16 16"
+            >
+              <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+              <path
+                fill-rule="evenodd"
+                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"
+              />
+            </svg>
+          </div>
+          <div class="col-10">
+            <h6>Username</h6>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Dignissimos quos architecto nesciunt similique libero tenetur
+              facere cupiditate eum quasi unde commodi eius, minus inventore
+              voluptatum! Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Quae cumque praesentium quaerat laboriosam alias minima cum
+              a magni. Laboriosam nobis commodi velit? Veritatis, autem animi!
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-2 d-flex flex-row-reverse">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="50"
+              height="50"
+              fill="currentColor"
+              class="bi bi-person-circle border border-2 border-info rounded-circle"
+              viewBox="0 0 16 16"
+            >
+              <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+              <path
+                fill-rule="evenodd"
+                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"
+              />
+            </svg>
+          </div>
+          <div class="col-10">
+            <h6>Username</h6>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Dignissimos quos architecto nesciunt similique libero tenetur
+              facere cupiditate eum quasi unde commodi eius, minus inventore
+              voluptatum! Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Laboriosam, tenetur aut dolorum facilis impedit illo dolor
+              ad veniam quasi natus itaque sequi error iusto eligendi!
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-2 d-flex flex-row-reverse">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="50"
+              height="50"
+              fill="currentColor"
+              class="bi bi-person-circle border border-2 border-info rounded-circle"
+              viewBox="0 0 16 16"
+            >
+              <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+              <path
+                fill-rule="evenodd"
+                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"
+              />
+            </svg>
+          </div>
+          <div class="col-10">
+            <h6>Username</h6>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Dignissimos quos architecto nesciunt similique libero tenetur
+              facere cupiditate eum quasi unde commodi eius, minus inventore
+              voluptatum! Lorem ipsum dolor sit, amet consectetur adipisicing
+              elit. Iusto possimus ad sapiente ipsam facilis. Culpa cum ipsam
+              nostrum consequatur cupiditate. Delectus sequi expedita ut cum?
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-2 d-flex flex-row-reverse">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="50"
+              height="50"
+              fill="currentColor"
+              class="bi bi-person-circle border border-2 border-info rounded-circle"
+              viewBox="0 0 16 16"
+            >
+              <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+              <path
+                fill-rule="evenodd"
+                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"
+              />
+            </svg>
+          </div>
+          <div class="col-10">
+            <h6>Username</h6>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Dignissimos quos architecto nesciunt similique libero tenetur
+              facere cupiditate eum quasi unde commodi eius, minus inventore
+              voluptatum! Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Unde obcaecati perferendis possimus molestias adipisci?
+              Exercitationem sequi nihil iusto facere doloremque maiores
+              voluptates, possimus officiis repudiandae!
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-2 d-flex flex-row-reverse">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="50"
+              height="50"
+              fill="currentColor"
+              class="bi bi-person-circle border border-2 border-info rounded-circle"
+              viewBox="0 0 16 16"
+            >
+              <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+              <path
+                fill-rule="evenodd"
+                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"
+              />
+            </svg>
+          </div>
+          <div class="col-10">
+            <h6>Username</h6>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Dignissimos quos architecto nesciunt similique libero tenetur
+              facere cupiditate eum quasi unde commodi eius, minus inventore
+              voluptatum! Lorem, ipsum dolor sit amet consectetur adipisicing
+              elit. Porro quod quaerat eligendi dignissimos omnis repellendus
+              repellat officia rem, maxime similique accusantium tenetur eum
+              tempora a.
+            </p>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <footer>
+      <div class="container-fluid bg-dark text-center p-5 mt-5">
+        <div class="row">
+          <div class="col-12 mb-5">
+            <button type="button" class="btn btn-outline-secondary">
+              Contattaci
+            </button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 text-white">
+            <p>&copy; 2021 Kalina Travel LTD. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
