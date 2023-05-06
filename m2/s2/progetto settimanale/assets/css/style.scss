@@ -2,3 +2,29 @@
 @import "./partials/header";
 @import "./partials/main";
 @import "./partials/footer";
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  background-color: rgb(33, 37, 41);
+  border: 2px solid white;
+  border-radius: 0px !important;
+}
+
+input[type="checkbox"]:checked {
+  width: 20px;
+  height: 20px;
+  background-color: rgb(33, 37, 41);
+  border: 2px solid white;
+  border-radius: 0px;
+}
+
+#buttons button:hover {
+  background-color: white;
+  color: black;
+}
+
+#edit-btn:hover {
+  background-color: white;
+  color: black;
+}
