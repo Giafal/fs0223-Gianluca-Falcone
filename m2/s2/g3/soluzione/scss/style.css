@@ -227,13 +227,13 @@ body {
   border-radius: 16px;
   box-shadow: 0 16px 36px rgba(0, 0, 0, 0.3);
   border: 2px solid #b278f5;
-  animation-name: animate-from-top-ui57kpz;
+  animation-name: animate-from-top-ui57l1r;
   animation-duration: 1s;
   animation-fill-mode: both;
   animation-delay: 800ms;
   width: 50%;
 }
-@keyframes animate-from-top-ui57kpz {
+@keyframes animate-from-top-ui57l1r {
   from {
     opacity: 0;
     translate: 0 100%;
@@ -250,12 +250,12 @@ body {
   line-height: 0.95;
   margin-bottom: 1rem;
   color: #28064f;
-  animation-name: animate-from-top-ui57kq4;
+  animation-name: animate-from-top-ui57l2q;
   animation-duration: 1s;
   animation-fill-mode: both;
   animation-delay: 300ms;
 }
-@keyframes animate-from-top-ui57kq4 {
+@keyframes animate-from-top-ui57l2q {
   from {
     opacity: 0;
     translate: 0 -10px;
@@ -266,7 +266,7 @@ body {
   }
 }
 .showcase-content p {
-  animation-name: animate-from-top-ui57kqf;
+  animation-name: animate-from-top-ui57l3d;
   animation-duration: 1s;
   animation-fill-mode: both;
   animation-delay: 600ms;
@@ -277,7 +277,7 @@ body {
   -webkit-padding-end: 3rem;
           padding-inline-end: 3rem;
 }
-@keyframes animate-from-top-ui57kqf {
+@keyframes animate-from-top-ui57l3d {
   from {
     opacity: 0;
     translate: 0 -10px;
@@ -288,12 +288,12 @@ body {
   }
 }
 .showcase-content button:first-of-type {
-  animation-name: animate-from-top-ui57kr8;
+  animation-name: animate-from-top-ui57l3w;
   animation-duration: 1s;
   animation-fill-mode: both;
   animation-delay: 800ms;
 }
-@keyframes animate-from-top-ui57kr8 {
+@keyframes animate-from-top-ui57l3w {
   from {
     opacity: 0;
     translate: 0 -10px;
@@ -304,12 +304,12 @@ body {
   }
 }
 .showcase-content button:nth-of-type(2) {
-  animation-name: animate-from-top-ui57kry;
+  animation-name: animate-from-top-ui57l4j;
   animation-duration: 1s;
   animation-fill-mode: both;
   animation-delay: 900ms;
 }
-@keyframes animate-from-top-ui57kry {
+@keyframes animate-from-top-ui57l4j {
   from {
     opacity: 0;
     translate: 0 -10px;
@@ -320,12 +320,12 @@ body {
   }
 }
 .showcase-content button:last-of-type {
-  animation-name: animate-from-top-ui57krz;
+  animation-name: animate-from-top-ui57l50;
   animation-duration: 1s;
   animation-fill-mode: both;
   animation-delay: 1000ms;
 }
-@keyframes animate-from-top-ui57krz {
+@keyframes animate-from-top-ui57l50 {
   from {
     opacity: 0;
     translate: 0 -10px;
