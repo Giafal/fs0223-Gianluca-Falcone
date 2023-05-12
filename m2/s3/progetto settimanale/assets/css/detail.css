@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
 .col-12.col-md-8 img {
   width: 100%;
 }
@@ -8,4 +10,8 @@
 
 .col-12.col-md-8 p {
   font-weight: bold;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
 }
