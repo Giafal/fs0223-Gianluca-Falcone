@@ -4,7 +4,7 @@ const fillDetailsPage = function (productDetails) {
   let colContent = `
           <img src=${productDetails.imageUrl} />
           <div>
-          <p>${productDetails.name}</p>
+          <p class="mt-5">${productDetails.name}</p>
           </div>
           <div>
           <p>${productDetails.description}</p>
