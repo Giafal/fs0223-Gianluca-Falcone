@@ -19,7 +19,7 @@ const getProducts = function () {
         let colTemplate = `
         <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-5">
               <div class="card">
-                <img src=${product.imageUrl} class="card-img-top" alt="..." />
+                <img src=${product.imageUrl} class="card-img-top" alt="${product.name}" />
                 <div class="card-body">
                   <h5 class="card-title">${product.name}</h5>
                   <p class="card-text">${product.description}</p>
