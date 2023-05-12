@@ -1,9 +1,9 @@
 const PRODUCTS_URL = "https://striveschool-api.herokuapp.com/api/product/";
 
 let addressBarContent = new URLSearchParams(window.location.search);
-let eventId = addressBarContent.get("productId");
+let productId = addressBarContent.get("productId");
 
-if (eventId) {
+if (productId) {
   document.getElementsByTagName("h2")[0].innerText =
     "Backoffice page - Modifica prodotto";
 
@@ -20,7 +20,7 @@ if (eventId) {
       "Sei sicuro di voler eliminare questo prodotto? Una volta confermato non potrai tornare indietro"
     );
     if (confirmed) {
-      fetch(PRODUCTS_URL + eventId, {
+      fetch(PRODUCTS_URL + productId, {
         method: "DELETE",
         headers: {
           Authorization:
@@ -41,7 +41,7 @@ if (eventId) {
     }
   });
 
-  fetch(PRODUCTS_URL + eventId, {
+  fetch(PRODUCTS_URL + productId, {
     headers: {
       Authorization:
         "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDVkZmQ5Mjg4Zjc0MDAwMTQyODc0NWIiLCJpYXQiOjE2ODM4ODEzNjMsImV4cCI6MTY4NTA5MDk2M30.-gLB3nzwSyc5lS4Em9K42KC5emwz0Y49eqwhGE5Y_GE",
@@ -85,8 +85,8 @@ productForm.addEventListener("submit", (e) => {
     imageUrl: imageInput.value,
   };
 
-  fetch(eventId ? PRODUCTS_URL + eventId : PRODUCTS_URL, {
-    method: eventId ? "PUT" : "POST",
+  fetch(productId ? PRODUCTS_URL + productId : PRODUCTS_URL, {
+    method: productId ? "PUT" : "POST",
     body: JSON.stringify(newProduct),
     headers: {
       Authorization:
@@ -96,7 +96,7 @@ productForm.addEventListener("submit", (e) => {
   })
     .then((res) => {
       if (res.ok) {
-        alert(eventId ? "PRODOTTO MODIFICATO!" : "PRODOTTO CREATO!");
+        alert(productId ? "PRODOTTO MODIFICATO!" : "PRODOTTO CREATO!");
         location.assign("./homepage.html");
       } else {
         alert("ERRORE NEL SALVATAGGIO");
