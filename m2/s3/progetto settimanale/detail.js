@@ -16,7 +16,7 @@ const fillDetailsPage = function (productDetails) {
           <p>${productDetails.price}€</p>
           </div>
           <div>
-          <a href="./homepage.html">INDIETRO</a>
+          <a href="./homepage.html" class="btn btn-primary">INDIETRO</a>
           </div>
       `;
   let colToFill = document.querySelector(".col-12.col-md-8");

@@ -16,24 +16,29 @@ if (eventId) {
   let deleteButton = document.getElementById("delete-button");
   deleteButton.classList.remove("d-none");
   deleteButton.addEventListener("click", () => {
-    fetch(PRODUCTS_URL + eventId, {
-      method: "DELETE",
-      headers: {
-        Authorization:
-          "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDVkZmQ5Mjg4Zjc0MDAwMTQyODc0NWIiLCJpYXQiOjE2ODM4ODEzNjMsImV4cCI6MTY4NTA5MDk2M30.-gLB3nzwSyc5lS4Em9K42KC5emwz0Y49eqwhGE5Y_GE",
-      },
-    })
-      .then((res) => {
-        if (res.ok) {
-          alert("eliminazione completata con successo");
-          location.assign("./homepage.html");
-        } else {
-          throw new Error("Problema nell'eliminazione dell'evento");
-        }
+    const confirmed = confirm(
+      "Sei sicuro di voler eliminare questo prodotto? Una volta confermato non potrai tornare indietro"
+    );
+    if (confirmed) {
+      fetch(PRODUCTS_URL + eventId, {
+        method: "DELETE",
+        headers: {
+          Authorization:
+            "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDVkZmQ5Mjg4Zjc0MDAwMTQyODc0NWIiLCJpYXQiOjE2ODM4ODEzNjMsImV4cCI6MTY4NTA5MDk2M30.-gLB3nzwSyc5lS4Em9K42KC5emwz0Y49eqwhGE5Y_GE",
+        },
       })
-      .catch((err) => {
-        console.log(err);
-      });
+        .then((res) => {
+          if (res.ok) {
+            alert("eliminazione completata con successo");
+            location.assign("./homepage.html");
+          } else {
+            throw new Error("Problema nell'eliminazione dell'evento");
+          }
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+    }
   });
 
   fetch(PRODUCTS_URL + eventId, {
@@ -105,9 +110,13 @@ productForm.addEventListener("submit", (e) => {
 
 let resetButton = document.getElementById("reset-button");
 resetButton.addEventListener("click", () => {
-  document.getElementById("name").value = "";
-  document.getElementById("description").value = "";
-  document.getElementById("image").value = "";
-  document.getElementById("price").value = "";
-  document.getElementById("brand").value = "";
+  const confirmed = confirm("Sei sicuro di voler resettare tutti i campi?");
+
+  if (confirmed) {
+    document.getElementById("name").value = "";
+    document.getElementById("description").value = "";
+    document.getElementById("image").value = "";
+    document.getElementById("price").value = "";
+    document.getElementById("brand").value = "";
+  }
 });
