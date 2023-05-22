@@ -26,3 +26,11 @@ const playerNumbers = (a: number, b: number): void => {
 };
 
 playerNumbers(player1, player2);
+
+/*
+npm init
+
+npm install -g typescript --save -dev
+
+tsc script -w
+*/

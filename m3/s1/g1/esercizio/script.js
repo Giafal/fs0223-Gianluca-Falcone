@@ -22,3 +22,10 @@ var playerNumbers = function (a, b) {
     }
 };
 playerNumbers(player1, player2);
+/*
+npm init
+
+npm install -g typescript --save -dev
+
+tsc script -w
+*/
