@@ -16,6 +16,9 @@ var playerNumbers = function (a, b) {
         else if (Math.abs(a - randomNumber) > Math.abs(b - randomNumber)) {
             console.log("Nessuno dei due ha indovinato il numero, ma il secondo giocatore si è avvicinato di più");
         }
+        else {
+            console.log("Nessuno dei due ha indovinato, ed entrambi sono alla stessa distanza");
+        }
     }
 };
 playerNumbers(player1, player2);

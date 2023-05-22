@@ -17,6 +17,10 @@ const playerNumbers = (a: number, b: number): void => {
       console.log(
         "Nessuno dei due ha indovinato il numero, ma il secondo giocatore si è avvicinato di più"
       );
+    } else {
+      console.log(
+        "Nessuno dei due ha indovinato, ed entrambi sono alla stessa distanza"
+      );
     }
   }
 };
