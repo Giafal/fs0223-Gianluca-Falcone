@@ -8,8 +8,6 @@ const playerNumbers = (a: number, b: number): void => {
     console.log("Il primo giocatore ha indovinato il numero casuale");
   } else if (b == randomNumber) {
     console.log("Il secondo giocatore ha indovinato il numero casuale");
-  } else if (a == randomNumber && b == randomNumber) {
-    console.log("Entrambi i giocatori hanno indovinato il numero casuale");
   } else {
     if (Math.abs(a - randomNumber) < Math.abs(b - randomNumber)) {
       console.log(
