@@ -32,5 +32,9 @@ npm init
 
 npm install -g typescript --save -dev
 
-tsc script -w
+tsc --init 
+tsc "nome file"-w
+
+tsc --outfile js/script.js -w
+
 */
