@@ -1,7 +1,7 @@
 let player1: number = 40;
 let player2: number = 60;
 
-const playerNumbers = (a: number, b: number): void => {
+const playerNumbers: Function = (a: number, b: number): void => {
   let randomNumber: number = Math.floor(Math.random() * 100) + 1;
   console.log(randomNumber);
   if (a == randomNumber) {
