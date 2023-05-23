@@ -30,7 +30,7 @@ playerNumbers(player1, player2);
 /*
 npm init
 
-npm install -g typescript --save -dev
+npm install -g typescript --save-dev
 
 tsc --init 
 tsc "nome file"-w
