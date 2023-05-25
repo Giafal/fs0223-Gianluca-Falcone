@@ -74,11 +74,11 @@ fetch("Abbigliamento.json")
     });
     console.log(nuovoArray);
 
-    let prezzoUno = nuovoArray[0].getacquistocapo();
+    let prezzoUno = nuovoArray[0].getacquistocapo().toFixed(2);
     console.log("Il prezzo del cardigan è " + prezzoUno + "€");
-    let prezzoDue = nuovoArray[1].getacquistocapo();
+    let prezzoDue = nuovoArray[1].getacquistocapo().toFixed(2);
     console.log("Il prezzo della t-shirt è " + prezzoDue + "€");
-    let prezzoTre = nuovoArray[2].getacquistocapo();
+    let prezzoTre = nuovoArray[2].getacquistocapo().toFixed(2);
     console.log("Il prezzo della felpa è " + prezzoTre + "€");
   })
   .catch((err) => console.log(err));
