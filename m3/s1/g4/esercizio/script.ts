@@ -54,7 +54,7 @@ fetch("Abbigliamento.json")
       throw new Error("Errore nella fetch");
     }
   })
-  .then((data) => {
+  .then((data: Abbigliamento[]) => {
     let nuovoArray: Abbigliamento[] = [];
     data.forEach((element: Abbigliamento) => {
       let nuovoCapo = new Abbigliamento(
