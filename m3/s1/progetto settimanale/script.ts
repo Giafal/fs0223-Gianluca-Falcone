@@ -105,8 +105,8 @@ let numeroChiamate1 = user1.getNumeroChiamate();
 console.log("Il numero di chiamate effettuate è " + numeroChiamate1);
 user1.azzeraChiamate();
 console.log(user1);
-console.log(user1.mostraRegistroChiamate());
-console.log(user1.filtraChiamatePerDataOra(new Date()));
+user1.mostraRegistroChiamate();
+user1.filtraChiamatePerDataOra(new Date());
 
 console.error("======================");
 
@@ -123,8 +123,8 @@ let numeroChiamate2 = user2.getNumeroChiamate();
 console.log("Il numero di chiamate effettuate è " + numeroChiamate2);
 user2.azzeraChiamate();
 console.log(user2);
-console.log(user2.mostraRegistroChiamate());
-console.log(user2.filtraChiamatePerDataOra(new Date()));
+user2.mostraRegistroChiamate();
+user2.filtraChiamatePerDataOra(new Date());
 
 console.error("======================");
 
@@ -141,5 +141,5 @@ let numeroChiamate3 = user3.getNumeroChiamate();
 console.log("Il numero di chiamate effettuate è " + numeroChiamate3);
 user3.azzeraChiamate();
 console.log(user3);
-console.log(user3.mostraRegistroChiamate());
-console.log(user3.filtraChiamatePerDataOra(new Date()));
+user3.mostraRegistroChiamate();
+user3.filtraChiamatePerDataOra(new Date());
