@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "body": "Lorem ipsum dolor sit amet, consectetur adipis occ sapien et sapien et sapien et sapien et sapien et sapien et sapien et sapien et sapien et",
+    "title": "Primo post",
+    "active": true
+  },
+  {
+    "id": 2,
+    "body": "Lorem ipsum dolor sit amet, consectetur adipis occ sapien et sapien et sapien et sapien et sapien et sapien et sapien et sapien et sapien et",
+    "title": "Secondo post",
+    "active": true
+  },
+  {
+    "id": 3,
+    "body": "Lorem ipsum dolor sit amet, consectetur adipis occ sapien et sapien et sapien et sapien et sapien et sapien et sapien et sapien et sapien et",
+    "title": "Terzo post",
+    "active": true
+  },
+  {
+    "id": 4,
+    "body": "Lorem ipsum dolor sit amet, consectetur adipis occ sapien et sapien et sapien et sapien et sapien et sapien et sapien et sapien et sapien et",
+    "title": "Quarto post",
+    "active": false
+  },
+  {
+    "id": 5,
+    "body": "Lorem ipsum dolor sit amet, consectetur adipis occ sapien et sapien et sapien et sapien et sapien et sapien et sapien et sapien et sapien et",
+    "title": "Quinto post",
+    "active": false
+  }
+]
