@@ -15,21 +15,9 @@ export class TodosService {
     return fetch(this.apiUrl).then((response) => response.json());
   }
 
-  getTodoSingolo(id: number): Promise<ITodo> {
-    return fetch(this.apiUrl + '/' + id).then((response) => response.json());
-  }
-
   addTodo(todo: ITodo): Promise<ITodo> {
     return fetch(this.apiUrl, {
       method: 'post',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(todo),
-    }).then((response) => response.json());
-  }
-
-  updateTodo(todo: ITodo) {
-    return fetch(this.apiUrl + '/' + todo.id, {
-      method: 'PUT',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(todo),
     }).then((response) => response.json());
@@ -41,7 +29,7 @@ export class TodosService {
     }).then((response) => response.json());
   }
 
-  toggleStatus(id: number) {
+  changeStatus(id: number) {
     const thisUrl = `${this.apiUrl}/${id}`;
     const data = { completed: true };
     return fetch(thisUrl, {

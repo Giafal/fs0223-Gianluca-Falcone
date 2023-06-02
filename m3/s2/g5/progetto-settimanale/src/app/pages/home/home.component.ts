@@ -12,6 +12,7 @@ export class HomeComponent {
   todos: ITodo[] = [];
   loading: boolean = true;
   todo: Todos = new Todos('', false);
+  innerText: string = '';
 
   constructor(private todoSvc: TodosService) {}
 
@@ -34,11 +35,18 @@ export class HomeComponent {
   }
 
   create() {
-    this.todoSvc.addTodo(this.todo).then((res) => console.log(res));
-    this.getTodos();
+    if (this.innerText == '') {
+      this.innerText = 'Inserisci un ToDo';
+    } else if (this.innerText == 'Inserisci un ToDo') {
+      this.innerText = 'Inserisci un ToDo';
+    } else {
+      this.todoSvc.addTodo(this.todo).then((res) => console.log(res));
+      this.getTodos();
+      this.innerText = '';
+    }
   }
 
   completeTodo(id?: number) {
-    this.todoSvc.toggleStatus(id!).then((response) => this.getTodos());
+    this.todoSvc.changeStatus(id!).then((response) => this.getTodos());
   }
 }

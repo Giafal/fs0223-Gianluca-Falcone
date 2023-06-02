@@ -4,6 +4,7 @@
 <form>
   <input
     [(ngModel)]="todo.title"
+    [(ngModel)]="innerText"
     type="text"
     placeholder="Inserisci un todo"
     name="todo"
@@ -11,8 +12,8 @@
   <button (click)="create()">Crea</button>
 </form>
 
-<table>
-  <tr *ngFor="let todo of todos">
+<table *ngFor="let todo of todos">
+  <tr>
     <td>
       {{ todo.title }}
     </td>
@@ -33,11 +34,13 @@
         />
       </svg>
     </td>
+  </tr>
+  <tr>
     <td>
       <button (click)="delete(todo.id)">Elimina</button>
     </td>
     <td>
-      <button (click)="completeTodo(todo.id)">Completa</button>
+      <button (click)="completeTodo(todo.id)">Completato</button>
     </td>
   </tr>
 </table>
