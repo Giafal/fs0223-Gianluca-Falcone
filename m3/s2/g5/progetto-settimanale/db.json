@@ -19,6 +19,11 @@
       "title": "Imparare Bootstrap",
       "completed": true,
       "id": 4
+    },
+    {
+      "title": "Imparare Typescript",
+      "completed": true,
+      "id": 5
     }
   ]
 }

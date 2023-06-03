@@ -40,8 +40,7 @@ export class HomeComponent {
     } else if (this.innerText == 'Inserisci un ToDo') {
       this.innerText = 'Inserisci un ToDo';
     } else {
-      this.todoSvc.addTodo(this.todo).then((res) => console.log(res));
-      this.getTodos();
+      this.todoSvc.addTodo(this.todo).then((res) => this.getTodos());
       this.innerText = '';
     }
   }
