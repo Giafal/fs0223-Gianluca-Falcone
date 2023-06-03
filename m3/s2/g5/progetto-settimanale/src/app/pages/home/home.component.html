@@ -1,46 +1,50 @@
-<div *ngIf="loading">Loading...</div>
-<div *ngIf="todos.length == 0 && !loading">Non ci sono todo</div>
+<main>
+  <div id="loading" *ngIf="loading">Loading...</div>
+  <div id="result" *ngIf="todos.length == 0 && !loading">Non ci sono todo</div>
 
-<form>
-  <input
-    [(ngModel)]="todo.title"
-    [(ngModel)]="innerText"
-    type="text"
-    placeholder="Inserisci un todo"
-    name="todo"
-  />
-  <button (click)="create()">Crea</button>
-</form>
+  <form>
+    <input
+      [(ngModel)]="todo.title"
+      [(ngModel)]="innerText"
+      type="text"
+      placeholder="Inserisci un ToDo"
+      name="todo"
+    />
+    <button (click)="create()">Crea</button>
+  </form>
 
-<table *ngFor="let todo of todos">
-  <tr>
-    <td>
-      {{ todo.title }}
-    </td>
-    <td *ngIf="todo.completed == true">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="16"
-        height="16"
-        fill="currentColor"
-        class="bi bi-check2-circle"
-        viewBox="0 0 16 16"
-      >
-        <path
-          d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z"
-        />
-        <path
-          d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z"
-        />
-      </svg>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <button (click)="delete(todo.id)">Elimina</button>
-    </td>
-    <td>
-      <button (click)="completeTodo(todo.id)">Completato</button>
-    </td>
-  </tr>
-</table>
+  <table *ngFor="let todo of todos">
+    <tr>
+      <td id="todo">
+        {{ todo.title }}
+      </td>
+      <td id="checkmark" *ngIf="todo.completed == true">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="20"
+          height="20"
+          fill="green"
+          class="bi bi-check2-circle"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z"
+          />
+          <path
+            d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z"
+          />
+        </svg>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <button id="delete" (click)="delete(todo.id)">Elimina</button>
+      </td>
+      <td>
+        <button id="complete" (click)="completeTodo(todo.id)">
+          Completato
+        </button>
+      </td>
+    </tr>
+  </table>
+</main>

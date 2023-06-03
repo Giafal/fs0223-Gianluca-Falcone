@@ -1,29 +1,24 @@
 {
   "todos": [
     {
-      "title": "Imparare bootstrap",
-      "completed": true,
-      "id": 2
+      "title": "Imparare Angular",
+      "completed": false,
+      "id": 1
     },
     {
       "title": "Imparare Scss",
       "completed": true,
-      "id": 3
-    },
-    {
-      "title": "Imparare Javascript",
-      "completed": true,
-      "id": 4
+      "id": 2
     },
     {
       "title": "Imparare Java",
-      "completed": true,
-      "id": 5
+      "completed": false,
+      "id": 3
     },
     {
-      "title": "Imparare a volare",
-      "completed": false,
-      "id": 6
+      "title": "Imparare Bootstrap",
+      "completed": true,
+      "id": 4
     }
   ]
 }

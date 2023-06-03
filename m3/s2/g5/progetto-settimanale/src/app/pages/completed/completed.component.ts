@@ -9,6 +9,7 @@ import { TodosService } from 'src/app/todos.service';
 })
 export class CompletedComponent {
   todos: ITodo[] = [];
+  loading: boolean = true;
 
   constructor(private todoSvc: TodosService) {}
 
@@ -19,6 +20,7 @@ export class CompletedComponent {
   getTodos() {
     this.todoSvc.getTodos().then((todosResponse) => {
       this.todos = todosResponse;
+      this.loading = false;
     });
   }
 }
