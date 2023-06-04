@@ -6,24 +6,24 @@
       "id": 1
     },
     {
-      "title": "Imparare Scss",
-      "completed": true,
-      "id": 2
-    },
-    {
       "title": "Imparare Java",
       "completed": false,
       "id": 3
     },
     {
-      "title": "Imparare Bootstrap",
+      "title": "Imparare Scss",
       "completed": true,
       "id": 4
     },
     {
-      "title": "Imparare Typescript",
+      "title": "Imparare Bootstrap",
       "completed": true,
       "id": 5
+    },
+    {
+      "title": "Imparare Typescript",
+      "completed": true,
+      "id": 6
     }
   ]
 }

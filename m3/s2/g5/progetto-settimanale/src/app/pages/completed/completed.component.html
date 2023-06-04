@@ -1,6 +1,8 @@
 <main>
   <div id="loading" *ngIf="loading">Loading...</div>
-  <div id="result" *ngIf="todos.length == 0 && !loading">Non ci sono todo</div>
+  <div id="result" *ngIf="todos.length == 0 && !loading">
+    Non ci sono ToDo completati
+  </div>
 
   <table>
     <tr *ngFor="let todo of todos">
