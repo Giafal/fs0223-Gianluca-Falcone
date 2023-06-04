@@ -1,6 +1,6 @@
 <main>
   <div id="loading" *ngIf="loading">Loading...</div>
-  <div id="result" *ngIf="todos.length == 0 && !loading">
+  <div id="result" *ngIf="noCompletedTodos && !loading">
     Non ci sono ToDo completati
   </div>
 

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { ITodo } from 'src/app/Models/Itodo';
 import { Todos } from 'src/app/Models/todos';
 import { TodosService } from 'src/app/todos.service';
@@ -24,6 +24,7 @@ export class HomeComponent {
     this.todoSvc.deleteTodo(id).then((res) => {
       console.log('todo eliminato');
       this.getTodos();
+      this.todoSvc.completedTodos.pop();
     });
   }
 
@@ -47,5 +48,6 @@ export class HomeComponent {
 
   completeTodo(id?: number) {
     this.todoSvc.changeStatus(id!).then((response) => this.getTodos());
+    this.todoSvc.completedTodos.push(this.todo);
   }
 }

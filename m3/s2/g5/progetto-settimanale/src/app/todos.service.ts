@@ -9,6 +9,8 @@ export class TodosService {
 
   allTodos: ITodo[] = [];
 
+  completedTodos: ITodo[] = [];
+
   constructor() {}
 
   getTodos(): Promise<ITodo[]> {

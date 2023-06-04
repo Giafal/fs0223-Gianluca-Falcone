@@ -10,11 +10,15 @@ import { TodosService } from 'src/app/todos.service';
 export class CompletedComponent {
   todos: ITodo[] = [];
   loading: boolean = true;
+  noCompletedTodos: boolean = true;
 
   constructor(private todoSvc: TodosService) {}
 
   ngOnInit() {
     this.getTodos();
+    if (this.todoSvc.completedTodos.length > 0) {
+      this.noCompletedTodos = false;
+    }
   }
 
   getTodos() {
