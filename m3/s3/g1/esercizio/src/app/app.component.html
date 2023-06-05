@@ -1,0 +1,19 @@
+<h1>Ti piacciono {{ likedArr.length }} foto</h1>
+<div class="container">
+  <div class="row">
+    <div class="col-3" *ngFor="let photos of photosArr">
+      <div class="card">
+        <img src="{{ photos.url }}" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">{{ photos.title }}</h5>
+          <a href="#" class="btn btn-danger" (click)="deletePhoto(photos.id)"
+            >Elimina</a
+          >
+          <a href="#" class="btn btn-primary" (click)="likePhoto(photos.id)"
+            >Mi piace</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
