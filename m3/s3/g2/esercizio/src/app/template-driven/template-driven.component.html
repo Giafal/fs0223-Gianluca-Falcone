@@ -1,0 +1,69 @@
+<form>
+  <div class="mb-3">
+    <label for="exampleInputName1" class="form-label">Name</label>
+    <input
+      type="text"
+      class="form-control"
+      id="exampleInputName1"
+      aria-describedby="emailHelp"
+      required
+      [(ngModel)]="name"
+    />
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputAleterego1" class="form-label">AlterEgo</label>
+    <input
+      type="text"
+      class="form-control"
+      id="exampleInputAleterego1"
+      required
+      [(ngModel)]="alterego"
+    />
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPower1" class="form-label">Power</label>
+    <select
+      name="power"
+      class="form-control"
+      id="exampleInputPower1"
+      [(ngModel)]="power"
+    >
+      <option value="" selected>--Scegli power--</option>
+      <option value="invisibilità">Invisibilità</option>
+      <option value="volo">Volo</option>
+      <option value="sguardo laser">Sguardo laser</option>
+    </select>
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputEnemy1" class="form-label">Enemy</label>
+    <input
+      type="text"
+      class="form-control"
+      id="exampleInputEnemy1"
+      maxlength="10"
+      [(ngModel)]="enemy"
+    />
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPlanet1" class="form-label">Planet</label>
+    <input
+      type="text"
+      class="form-control"
+      id="exampleInputPlanet1"
+      required
+      minlength="5"
+      [(ngModel)]="planet"
+    />
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputWeakness1" class="form-label">Weakness</label>
+    <input
+      type="text"
+      class="form-control"
+      id="exampleInputWeakness1"
+      [(ngModel)]="weakness"
+    />
+  </div>
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
