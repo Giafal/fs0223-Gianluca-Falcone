@@ -1,0 +1,33 @@
+<h1>Modifica i dati</h1>
+<form>
+  <input
+    type="text"
+    name="nome"
+    placeholder="Nome"
+    [(ngModel)]="user.name"
+    class="form-control"
+  />
+  <input
+    type="text"
+    name="cognome"
+    placeholder="Cognome"
+    [(ngModel)]="user.surname"
+    class="form-control"
+  />
+  <input
+    type="email"
+    name="email"
+    placeholder="email"
+    [(ngModel)]="user.email"
+    class="form-control"
+  />
+  <input
+    type="password"
+    name="password"
+    placeholder="password"
+    [(ngModel)]="user.password"
+    class="form-control"
+    required
+  />
+  <button class="btn btn-primary" (click)="modifica(user)">Modifica</button>
+</form>

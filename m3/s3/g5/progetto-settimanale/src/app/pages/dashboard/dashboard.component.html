@@ -1,0 +1,17 @@
+<h1>Ecco gli utenti registrati</h1>
+<table class="table">
+  <tr *ngFor="let user of userArr">
+    <td>{{ user.id }}</td>
+    <td>{{ user.name }}</td>
+    <td>{{ user.surname }}</td>
+    <td>{{ user.email }}</td>
+    <td>
+      <a class="btn btn-primary" [routerLink]="['modifica', user.id]"
+        >Modifica</a
+      >
+    </td>
+    <td>
+      <a href="" class="btn btn-danger" (click)="del(user.id)">Elimina</a>
+    </td>
+  </tr>
+</table>
