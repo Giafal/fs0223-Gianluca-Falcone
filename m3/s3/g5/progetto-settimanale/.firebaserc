@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "progetto-settimanale-angular": {
+      "hosting": {
+        "progetto-settimanale": [
+          "progetto-settimanale-angular"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "progetto-settimanale-angular"
+  }
+}
