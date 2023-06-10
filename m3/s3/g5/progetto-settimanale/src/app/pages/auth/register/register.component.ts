@@ -20,7 +20,7 @@ export class RegisterComponent {
 
   register() {
     this.authSvc.signUp(this.data).subscribe((accessData) => {
-      alert(accessData.user.name);
+      alert('Registrazione avvenuta con successo');
       this.router.navigate(['/auth']);
     });
   }
